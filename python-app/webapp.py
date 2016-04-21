@@ -33,6 +33,7 @@ def load_page(filename):
     return
 load_page("index.html")
 load_page("style.css")
+load_page("done.html")
 
 class AdministrationWebApp:
     def index(self, *args):
@@ -46,7 +47,7 @@ class AdministrationWebApp:
         functions.conf.mail_set(mail)
         functions.conf.hour_set(hour)
         functions.conf.minutes_set(minutes)
-        raise cherrypy.HTTPRedirect("/")
+        return wwwpages["done"]
     mod.exposed = True
     def modd(self, mail, hour, minutes, *args):
         functions.conf.mail_set(mail)
