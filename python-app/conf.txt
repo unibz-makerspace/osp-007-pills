@@ -1,0 +1,7 @@
+[parents]
+mail = 
+
+[pills_must_be_taken]
+hour = 11
+minutes = 0
+
