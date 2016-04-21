@@ -68,9 +68,19 @@ The wiring is as follows:
 **Please make sure that the module is detached when your try to upload a sketch
 the Arduino Uno or else the process will fail!**
 
+### Bluetooth Communication
+You can test the bluetooth connection on an Android smartphone by installing
+apps like
+[BT Simple Terminal](https://play.google.com/store/apps/details?id=wingood.bluetooth.btsimpleterminal)
+or by creating a custom application in Android Studio by following the guides of
+[Android-er](http://android-er.blogspot.it/2015/07/android-example-to-communicate-with.html).
+Further details about developing applications for Android can be found at
+http://developer.android.com/sdk/.
+
 ### Useful Links
 * https://www.arduino.cc/
 * https://www.visualstudio.com/
 * http://www.visualmicro.com/
+* http://developer.android.com/sdk/
 * https://git-for-windows.github.io/
 * https://123d.circuits.io
