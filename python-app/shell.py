@@ -1,15 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf8 -*-
 #
-# File: __init__.py
+# File: shell.py
 #
-# Copyright (C) 2016 Marco Marinello <mmarinello@sezf.it>
+# Copyright (C) 2016 Marco Marinello
 # 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
 # (at your option) any later version.
 #
+# Life-saving pills distributor Controller
+# A project of the High school "E. Torricelli" http://www.torricelli.bz.it
+# developed in collaboration with the Makerspace of
+# the Free University of Bolzano http://makerspace.inf.unibz.it
 
 # Shell for the life-saving pills distributor
 
