@@ -19,14 +19,16 @@ It checks if the pills were taken, sends alarms, updates data.
 ### functions.py
 The file collects the functions that were executed by other scripts.
 Each function must to include the following variables that describes it self.
+
 *command = "shell command"*
+
 *info = "command info"*
 
 ### shell.py
 A basic Python shell that runs the functions of *functions.py* by typing into
 the shell the commands and *help* to get a basic info screen.
 
-### webapp.py index.html style.css
+### webapp.py index.html done.html style.css
 Cherrypy-based Python WebApp to configure the server via HTTP or with the
 Android App
 
