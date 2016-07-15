@@ -1,0 +1,7 @@
+[parents]
+mail = email@local.domain
+
+[pills_must_be_taken]
+hour = 11
+minutes = 0
+
