@@ -1,3 +1,9 @@
+/* 
+  Fotocellula.cpp - Libreria rilevare la luminosità.
+	Classe Fotocellula
+*/
+
+#include "Arduino.h"
 #include "Fotocellula.h"
 
 Fotocellula::Fotocellula(const unsigned short int  fotocellulaPin, const unsigned short int percentualeSoglia, const unsigned int intervalloCampionamento, const unsigned int numeroCampionamenti)
@@ -16,6 +22,7 @@ unsigned short int Fotocellula::calibra()
   unsigned int somma = 0;
   static unsigned short int valoreMedioSensore = map(analogRead(p_fotocellulaPin), 0, 1023, 0, 255);
   
+	// il vettore delle intensità luminose è aggiornato periodicamente
   if ((millis() - istantePrecedente) > p_intervalloCampionamento)
   {
     istantePrecedente = millis();
@@ -43,6 +50,7 @@ unsigned short int Fotocellula::calibra()
 unsigned short int Fotocellula::inizializzaCalibrazione()
 {
   unsigned int somma = 0;
+	// durante il setup il vettore è caricato con i valori delle intensità luminose
   for(int i = 0; i < p_numeroCampionamenti; i++)
   {
     s_valoriSensore[i] = map(analogRead(p_fotocellulaPin), 0, 1023, 0, 255);
@@ -61,7 +69,8 @@ boolean Fotocellula::aggiorna()
 //  valoreSensore = constrain(valoreSensore, 0, 255);
   
   boolean segnale = false;
-  
+
+	// se il valore della luminosità rilevata è minore della soglia, ciò è segnalato  
   if (valoreSensore < s_soglia)
     segnale = true;
   

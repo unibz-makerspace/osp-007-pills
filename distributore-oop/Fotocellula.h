@@ -1,4 +1,12 @@
-/*** Classe Fotocellula ***/
+/* 
+  Fotocellula.h - Libreria rilevare la luminosità.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+	Classe Fotocellula
+*/
+
+#ifndef Fotocellula_h
+#define Fotocellula_h
 
 #include <Arduino.h>
 
@@ -18,9 +26,11 @@ class Fotocellula
     unsigned short int s_soglia;
      
   public:
-    Fotocellula(const unsigned short int fotocellulaPin, const unsigned short int percentualeSoglia, const unsigned int intervalloCampionamento, const unsigned int numeroCampionamenti);
-    unsigned short int inizializzaCalibrazione();
-    unsigned short int calibra();   
-    boolean aggiorna();		// aggiorna la posizione del segnalatore al passare del tempo
+    Fotocellula(const unsigned short int fotocellulaPin, const unsigned short int percentualeSoglia, const unsigned int intervalloCampionamento, const unsigned int numeroCampionamenti); // costruttore
+    unsigned short int inizializzaCalibrazione(); // determina l'intensità luninosa iniziale 
+    unsigned short int calibra(); // calibra progressivamente la soglia di attivazione, adeguandola al mutare delle condizioni
+    boolean aggiorna();	// aggiorna la posizione del segnalatore al passare del tempo
 };
+
+#endif
 
