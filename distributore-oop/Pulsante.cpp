@@ -1,3 +1,9 @@
+/* 
+  Pulsante.cpp - Implementazione della classe Pulsante.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
 #include "Pulsante.h"
 
 Pulsante::Pulsante(const unsigned short int pulsantePin, const unsigned short int debounceRitardo)

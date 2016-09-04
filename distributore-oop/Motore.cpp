@@ -1,3 +1,9 @@
+/* 
+  Motore.cpp - Implementazione della classe Motore.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
 #include "Motore.h"
 
 Motore::Motore(const float ampiezzaSettoreRotazione, const unsigned long intervalloDistribuzione, const unsigned long intervalloCaricamento)

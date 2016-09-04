@@ -1,4 +1,11 @@
-/*** Classe Segnalatore ***/
+/* 
+  Segnalatore.h - Classe Segnalatore: emissione di segnale luminoso.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
+#ifndef SEGNALATORE_H
+#define SEGNALATORE_H
 
 #include <Arduino.h>
 
@@ -30,3 +37,5 @@ class Segnalatore
     void disattiva();
     void aggiorna();				// aggiorna la posizione del segnalatore al passare del tempo
 };
+
+#endif

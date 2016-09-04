@@ -1,4 +1,11 @@
-/*** Classe Pulsante ***/
+/* 
+  Pulsante.h - Classe Pulsante: rilevamento della pressione sul pulsante.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
+#ifndef PULSANTE_H
+#define PULSANTE_H
 
 #include <Arduino.h>
 
@@ -18,3 +25,5 @@ class Pulsante
     Pulsante(const unsigned short int pulsantePin, const unsigned short int debounceRitardo);
     boolean aggiorna();				// aggiorna la posizione del segnalatore al passare del tempo
 };
+
+#endif

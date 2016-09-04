@@ -1,3 +1,9 @@
+/* 
+  Segnalatore.cpp - Implementazione della classe Segnalatore.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
 #include "Segnalatore.h"
 
 Segnalatore::Segnalatore(const unsigned long durataSegnaleOn, const unsigned long durataSegnaleOff)

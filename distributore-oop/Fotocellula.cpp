@@ -1,6 +1,7 @@
 /* 
-  Fotocellula.cpp - Libreria rilevare la luminosità.
-	Classe Fotocellula
+  Fotocellula.cpp - Implementazione della classe Fotocellula.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
 */
 
 #include "Arduino.h"

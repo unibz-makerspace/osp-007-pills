@@ -1,3 +1,9 @@
+/* 
+  RicevitoreTrasmettitoreSeriale.cpp - Implementazione della classe RicevitoreTrasmettitoreSeriale.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
 #include "RicevitoreTrasmettitoreSeriale.h"
 
 RicevitoreTrasmettitoreSeriale::RicevitoreTrasmettitoreSeriale(HardwareSerial *serial){

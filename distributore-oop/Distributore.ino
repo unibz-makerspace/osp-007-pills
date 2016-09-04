@@ -1,3 +1,9 @@
+/* 
+  Sketch Arduino per il controllo del distributore.
+  Creato da Robero De Munari 15/07/2016.
+  Released into the public domain.
+*/
+
 #include <Servo.h>
 #include "Costanti.h"
 #include "Motore.h"

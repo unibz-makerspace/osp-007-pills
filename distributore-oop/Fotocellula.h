@@ -1,12 +1,11 @@
 /* 
-  Fotocellula.h - Libreria rilevare la luminosità.
+  Fotocellula.h - Classe Fotocellula: rilevamento dell'intensità luminosa.
   Creato da Robero De Munari 15/07/2016.
   Released into the public domain.
-	Classe Fotocellula
 */
 
-#ifndef Fotocellula_h
-#define Fotocellula_h
+#ifndef FOTOCELLULA_H
+#define FOTOCELLULA_H
 
 #include <Arduino.h>
 
