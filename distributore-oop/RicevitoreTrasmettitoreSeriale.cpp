@@ -17,7 +17,7 @@ enum_messaggi RicevitoreTrasmettitoreSeriale::riceve() const
   
   if(Serial.available())
   {
-    char carattere = Serial.read();
+    char carattere = _HardSerial->read();
 
     if(payload && isDigit(carattere))
     {
